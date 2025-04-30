@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sarki Abuja Marketplace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+      overflow-x: hidden;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeIn 1s ease-out forwards;
+    }
+    .fade-in.delay-1 { animation-delay: 0.3s; }
+    .fade-in.delay-2 { animation-delay: 0.6s; }
+    .fade-in.delay-3 { animation-delay: 0.9s; }
+    
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .listing {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 300px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #1ebe57;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .background-image {
+      background-image: url('img/bg-image.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      color: rgb(46, 35, 35);
+      animation: fadeIn 2s ease-out forwards;
+    }
+
+    .background-image h2 {
+      font-size: 36px;
+    }
+
+    .hutu-description {
+      background: #e8e8e8;
+      padding: 50px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <section class="fade-in">
+    <h1>Welcome to Sarki Abuja Marketplace</h1>
+    <p class="fade-in delay-1">You can trust our genuine effort to help you invest wisely, to own a land here in Abuja, with real Rof.</p>
+  </section>
+
+  
+
+  <!-- Now Selling Section with Background -->
+  <section class="background-image fade-in delay-4">
+    <h2>Now Selling</h2>
+    <div class="listing">
+      <!-- Property 1 (Hutu 150 sqm) -->
+      <div class="card">
+        <img src="img/hutu1.jpg" alt="Hutu 150 sqm">
+        <h3>Hutu 150 sqm</h3>
+        <p>₦6,480,000 - Airport Road, Abuja</p>
+        <a class="button" href="https://wa.me/2348145972225?text=I%20want%20to%20learn%20more%20about%20Hutu%20150%20sqm">Learn More</a>
+      </div>
+
+      <!-- Property 2 (Hutu 250 sqm) -->
+      <div class="card">
+        <img src="img/hutu2.jpg" alt="Hutu 250 sqm">
+        <h3>Hutu 250 sqm</h3>
+        <p>₦10,800,000 - Airport Road, Abuja</p>
+        <a class="button" href="https://wa.me/2348145972225?text=I%20want%20to%20learn%20more%20about%20Hutu%20250%20sqm">Learn More</a>
+      </div>
+
+      <!-- Property 3 (Hutu 350 sqm) -->
+      <div class="card">
+        <img src="img/hutu3.jpg" alt="Hutu 350 sqm">
+        <h3>Hutu 350 sqm</h3>
+        <p>₦15,120,000 - Airport Road, Abuja</p>
+        <a class="button" href="https://wa.me/2348145972225?text=I%20want%20to%20learn%20more%20about%20Hutu%20350%20sqm">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Inspection Section -->
+  <section class="fade-in delay-2">
+    <h2>Free Physical Inspection Available</h2>
+    <p>Just message us on WhatsApp, and we will continue from there.</p>
+    <a class="button" href="https://wa.me/2348145972225?text=Hello%2C%20I%20am%20interested%20in%20a%20free%20physical%20inspection.">Message Us</a>
+  </section>
+
+  <!-- Hutu Description Section -->
+  <section class="hutu-description fade-in delay-3">
+    <h2>Hutu: Fast-Selling Real Estate Development</h2>
+    <p>Located along Airport Road, Abuja, Hutu is a prime real estate project with the vision to house the first African Golf Resort. As a fast-selling development, it offers incredible value and is set to become one of Abuja's most sought-after properties.</p>
+  </section>
+
+  <!-- Confirmation (Fake Page – Optional if building SPA or WhatsApp returns) -->
+  <footer>
+    <p>Thank you as you send this message. Free inspection is available.</p>
+  </footer>
+
+</body>
+</html>
